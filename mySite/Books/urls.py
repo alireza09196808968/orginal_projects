@@ -8,5 +8,6 @@ from . import views
 ######################################################################################################
 app_name = "Books"
 urlpatterns = [
-    path("", views.index, name = "index")
+    path("", views.index, name = "index"),
+    path("listView", views.BookListView.as_view(), name = "listView")
 ]
